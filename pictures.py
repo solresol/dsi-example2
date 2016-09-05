@@ -25,6 +25,12 @@ def display_platypus():
 ######################################################################
 # dragon
 def display_dragon():
+  if os.path.exists('dragon.jpg'):
+        dragon = skimage.io.imread('dragon.jpg')
+        matplotlib.pyplot.imshow(dragon)
+  else:
+        print "Dragon does not exist"
+
     pass
 
 ######################################################################
@@ -36,7 +42,12 @@ def display_beach_scene():
 ######################################################################
 # sky
 def display_sky():
-    pass
+     if os.path.exists('dragon.jpg'):
+        dragon = skimage.io.imread('dragon.jpg')
+        matplotlib.pyplot.imshow(dragon)
+     else:
+      	print "Dragon does not exist"
+
 
 
 ######################################################################
