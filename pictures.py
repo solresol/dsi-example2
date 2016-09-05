@@ -3,6 +3,7 @@
 import skimage.io
 import matplotlib.pyplot
 import os
+import sys
 
 ######################################################################
 # bus
@@ -10,6 +11,8 @@ def display_bus():
     if os.path.exists('bus.jpg'):
         bus = skimage.io.imread('bus.jpg')
         matplotlib.pyplot.imshow(bus)
+    else:
+        sys.exit("No such file: bus.jpg")
 
 ######################################################################
 # unicorns
