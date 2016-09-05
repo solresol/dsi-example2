@@ -3,6 +3,7 @@
 import skimage.io
 import matplotlib.pyplot
 import os
+import sys
 
 ######################################################################
 # bus
@@ -19,7 +20,14 @@ def display_unicorn():
 ######################################################################
 # platypus
 def display_platypus():
-    pass
+    count = 0
+    if os.path.exists('platypus.jpg'):
+        platypus = skimage.io.imread('platypus.jpg')
+        matplotlib.pyplot.imshow(platypus)
+        count += 1
+        count
+    else:
+        sys.exit("Platypus down!!")
 
 
 ######################################################################
