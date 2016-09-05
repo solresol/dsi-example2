@@ -19,7 +19,7 @@ def display_unicorn():
     	uni = skimage.io.imread('unicorn.jpg')
     	matplotlib.pyplot.imshow(uni)
     else:
-        pass
+        sys.exit("No unicorns here!")
 
 ######################################################################
 # platypus
