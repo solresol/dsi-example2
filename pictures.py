@@ -17,29 +17,54 @@ def display_bus():
 ######################################################################
 # unicorns
 def display_unicorn():
-    pass
+    if os.path.exists('unicorn.jpg'):
+    	uni = skimage.io.imread('unicorn.jpg')
+    	matplotlib.pyplot.imshow(uni)
+    else:
+        sys.exit("No unicorns here!")
 
 ######################################################################
 # platypus
 def display_platypus():
-    pass
+    count = 0
+    if os.path.exists('platypus.jpg'):
+        platypus = skimage.io.imread('platypus.jpg')
+        matplotlib.pyplot.imshow(platypus)
+        count += 1
+        count
+    else:
+        sys.exit("Platypus down!!")
 
 
 ######################################################################
 # dragon
-def display_dragon():
-    pass
+def dragon():
+    if os.path.exists('dragon.jpg'):
+      uni = skimage.io.imread('dragon.jpg')
+      matplotlib.pyplot.imshow(uni)
+    else:
+        sys.exit("No dragons")
 
 ######################################################################
 # beach scene
 def display_beach_scene():
-    pass
+    picname = 'beach.jpg'
+    if os.path.exists('beach.jpg'):
+        pic = skimage.io.imread('beach.jpg')
+        matplotlib.pyplot.imshow(pic)
+    else:
+	print "Picture does not exist"
 
 
 ######################################################################
 # sky
 def display_sky():
-    pass
+     print "Really blue sky "
+     if os.path.exists('dragon.jpg'):
+        dragon = skimage.io.imread('dragon.jpg')
+        matplotlib.pyplot.imshow(dragon)
+     else:
+      	print "Dragon does not exist"
 
 
 ######################################################################
