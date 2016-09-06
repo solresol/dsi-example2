@@ -25,12 +25,12 @@ def display_platypus():
 
 ######################################################################
 # dragon
-def display_unicorn():
-    if os.path.exists('unicorn.jpg'):
-      uni = skimage.io.imread('unicorn.jpg')
+def dragon():
+    if os.path.exists('dragon.jpg'):
+      uni = skimage.io.imread('dragon.jpg')
       matplotlib.pyplot.imshow(uni)
     else:
-        sys.exit("No unicorns here!")
+        sys.exit("No dragons")
 
 ######################################################################
 # beach scene
