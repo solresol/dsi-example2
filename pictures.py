@@ -45,11 +45,7 @@ def display_beach_scene():
 ######################################################################
 # sky
 def display_sky():
-     if os.path.exists('dragon.jpg'):
-        dragon = skimage.io.imread('dragon.jpg')
-        matplotlib.pyplot.imshow(dragon)
-     else:
-      	print "Dragon does not exist"
+     pass
 
 
 
