@@ -1,9 +1,15 @@
 #!/usr/bin/python
 
 import skimage.io
+import matplotlib
+import sys
+if 'linux' in sys.platform:
+    print "Using TkAgg"
+    matplotlib.use('TkAgg')
+else:
+    matplotlib.use('macosx')
 import matplotlib.pyplot
 import os
-import sys
 
 ######################################################################
 # bus
@@ -71,8 +77,13 @@ def display_sky():
 # Main program
 
 display_bus()
+matplotlib.pyplot.show()
 display_unicorn()
+matplotlib.pyplot.show()
 display_platypus()
+matplotlib.pyplot.show()
 display_dragon()
+matplotlib.pyplot.show()
 display_beach_scene()
+matplotlib.pyplot.show()
 display_sky()
