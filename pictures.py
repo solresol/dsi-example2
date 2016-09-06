@@ -41,6 +41,7 @@ def display_beach_scene():
 ######################################################################
 # sky
 def display_sky():
+     print "Really, really blue sky"
      if os.path.exists('dragon.jpg'):
         dragon = skimage.io.imread('dragon.jpg')
         matplotlib.pyplot.imshow(dragon)
