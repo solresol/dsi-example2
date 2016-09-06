@@ -38,8 +38,12 @@ def display_platypus():
 
 ######################################################################
 # dragon
-def display_dragon():
-    pass
+def dragon():
+    if os.path.exists('dragon.jpg'):
+      uni = skimage.io.imread('dragon.jpg')
+      matplotlib.pyplot.imshow(uni)
+    else:
+        sys.exit("No dragons")
 
 ######################################################################
 # beach scene
@@ -55,7 +59,12 @@ def display_beach_scene():
 ######################################################################
 # sky
 def display_sky():
-    print "Really blue sky "
+     print "Really blue sky "
+     if os.path.exists('dragon.jpg'):
+        dragon = skimage.io.imread('dragon.jpg')
+        matplotlib.pyplot.imshow(dragon)
+     else:
+      	print "Dragon does not exist"
 
 
 ######################################################################
