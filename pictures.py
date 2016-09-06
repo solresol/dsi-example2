@@ -30,7 +30,12 @@ def display_dragon():
 ######################################################################
 # beach scene
 def display_beach_scene():
-    pass
+    picname = 'beach.jpg'
+    if os.path.exists('beach.jpg'):
+        pic = skimage.io.imread('beach.jpg')
+        matplotlib.pyplot.imshow(pic)
+    else:
+	print "Picture does not exist"
 
 
 ######################################################################
