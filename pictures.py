@@ -3,6 +3,7 @@
 import skimage.io
 import matplotlib.pyplot
 import os
+import sys
 
 ######################################################################
 # bus
@@ -14,7 +15,11 @@ def display_bus():
 ######################################################################
 # unicorns
 def display_unicorn():
-    pass
+    if os.path.exists('unicorn.jpg'):
+    	uni = skimage.io.imread('unicorn.jpg')
+    	matplotlib.pyplot.imshow(uni)
+    else:
+        sys.exit("No unicorns here!")
 
 ######################################################################
 # platypus
