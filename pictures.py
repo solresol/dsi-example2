@@ -3,6 +3,7 @@
 import skimage.io
 import matplotlib.pyplot
 import os
+import sys
 
 ######################################################################
 # bus
@@ -24,14 +25,12 @@ def display_platypus():
 
 ######################################################################
 # dragon
-def display_dragon():
-  if os.path.exists('dragon.jpg'):
-        dragon = skimage.io.imread('dragon.jpg')
-        matplotlib.pyplot.imshow(dragon)
-  else:
-        print "Dragon does not exist"
-
-    pass
+def display_unicorn():
+    if os.path.exists('unicorn.jpg'):
+      uni = skimage.io.imread('unicorn.jpg')
+      matplotlib.pyplot.imshow(uni)
+    else:
+        sys.exit("No unicorns here!")
 
 ######################################################################
 # beach scene
